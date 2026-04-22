@@ -29,7 +29,7 @@ export function score(rank, percent, minPercent) {
 
     // 4. The New Exponential Decay Formula
     // Base 420 with a -0.009 decay rate
-    let basePoints = 690 * Math.exp(-0.008* (rank - 1));
+    let basePoints =420 * Math.exp(-0.008* (rank - 1));
     
     // 5. Apply percentage scaling
     let calculatedScore = basePoints * ((percent - effectiveMin) / denominator);
